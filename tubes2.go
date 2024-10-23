@@ -1,4 +1,5 @@
-package main 
+// wawasan global kecew
+package main
 
 import (
 	"fmt"
@@ -343,17 +344,16 @@ func binarySearchTransaksi(id int) int {
 	return -1
 }
 
-
 func insertionSortNama(ascending bool) {
-    for i := 1; i < jumlahBarang; i++ {
-        key := barangList[i]
-        j := i - 1
+	for i := 1; i < jumlahBarang; i++ {
+		key := barangList[i]
+		j := i - 1
 
-        for j >= 0 && ((ascending && barangList[j].Nama > key.Nama) || (!ascending && barangList[j].Nama < key.Nama)) {
-            barangList[j+1] = barangList[j]
-            j = j - 1
-        }
-        barangList[j+1]=key
+		for j >= 0 && ((ascending && barangList[j].Nama > key.Nama) || (!ascending && barangList[j].Nama < key.Nama)) {
+			barangList[j+1] = barangList[j]
+			j = j - 1
+		}
+		barangList[j+1] = key
 	}
 }
 func selectionSortHarga(ascending bool) {
